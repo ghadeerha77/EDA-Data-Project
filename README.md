@@ -1,12 +1,25 @@
-# Data cleaning project
+# Layoffs Data Analysis Project
 
 ## Overview
-Data cleaning project using SQL on layoffs dataset.
+Data cleaning and exploratory data analysis (EDA) 
+project using SQL on a real-world layoffs dataset.
 
-## Steps
-- removed duplicates
-- Standardized data
-- Handled NULL values
+## Project Stages
+
+### 1. Data Cleaning
+- Removed duplicates using ROW_NUMBER()
+- Standardized data (TRIM, date format, industry names)
+- Handled NULL values using self JOIN
+- Removed irrelevant rows
+
+### 2. Exploratory Data Analysis (EDA)
+- Analyzed layoffs by company, industry, and country
+- Identified top 5 companies per year using DENSE_RANK()
+- Calculated rolling total of layoffs using CTE
 
 ## Tools
-- MYSQL
+- MySQL
+- MySQL Workbench
+
+## Dataset
+- Source: Kaggle - Layoffs Dataset
